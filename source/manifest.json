@@ -11,10 +11,17 @@
     "128": "logos/kibana-plus-logo-128.png"
   },
 
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+
+  "options_page": "popup.html",
+
   "content_scripts": [
     {
       "matches": [
-        "https://logs.pardot.com/*"
+        "http://*/*",
+        "https://*/*"
       ],
       "js": [
         "jquery-3.1.1.min.js",
@@ -24,7 +31,8 @@
     }
   ],
 
-  "permissions": ["contextMenus"],
+  "permissions": ["contextMenus", "storage"],
+
   "background": {
     "scripts": [
       "jquery-3.1.1.min.js",
