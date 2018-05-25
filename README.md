@@ -4,7 +4,9 @@ Chrome extension that adds helpful functionality to the kibana web interface
 
 Installation
 ------------
-Clone or download kibana-plus. Then follow these [instructions](https://developer.chrome.com/extensions/getstarted#unpacked) on how to install an unpacked Chrome Extension.
+1. Clone or download kibana-plus.
+2. Follow these [instructions](https://developer.chrome.com/extensions/getstarted#unpacked) on how to install an unpacked Chrome Extension.
+  * NOTE: use kibana-plus/src directory as the extension directory.
 
 Features
 --------
