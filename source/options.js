@@ -9,10 +9,10 @@ function save_options() {
   }, function() {
     // Update status to let user know options were saved.
     var status = document.getElementById('status');
-    status.textContent = 'Options saved.';
+    status.classList.add('show');
     setTimeout(function() {
-      status.textContent = '';
-    }, 1000);
+      status.classList.remove('show');
+    }, 1500);
   });
 }
 
